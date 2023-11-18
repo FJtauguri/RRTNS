@@ -193,7 +193,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                                             Password</label>
                                                         <input id="current_password" type="text" name="current_password"
                                                             class="form-control" maxlength="8">
-                                                        <!-- Check if the user password is equal to the password from 'admin' table-->
                                                     </div>
                                                     <div class="mb-3 new-password" style="width: 200px;">
                                                         <label class="m-0 mt-4" for="password">Password</label>
