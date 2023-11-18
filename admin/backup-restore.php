@@ -2,7 +2,7 @@
 include('../database/dbcon.php');
 
 if (isset($_POST['backup'])) {
-    $backupFolder = 'backup/'; 
+    $backupFolder = 'backup/';
     $backupFile = 'rrtsnss_' . date("Y-m-d") . '_' . uniqid() . '.sql';
     $backupPath = $backupFolder . $backupFile;
 
@@ -10,11 +10,11 @@ if (isset($_POST['backup'])) {
     $host = "localhost";
     $user = "root";
     $password = "";
-    $database = "lms"; 
+    $database = "lms";
 
     $tables = array();
     $sql = "SHOW TABLES";
-    $result = $con->query($sql); 
+    $result = $con->query($sql);
 
     while ($row = $result->fetch_row()) {
         $tables[] = $row[0];
@@ -29,7 +29,7 @@ if (isset($_POST['backup'])) {
         $row = $result->fetch_row();
         $sqlScript .= "\n\n" . $row[1] . ";\n\n";
         $query = "SELECT * FROM $table";
-        $result = $con->query($query); 
+        $result = $con->query($query);
         $columnCount = $result->field_count;
 
         for ($i = 0; $i < $columnCount; $i++) {
@@ -64,7 +64,7 @@ if (isset($_POST['backup'])) {
 
 
         if ($try) {
-            echo('<script>alert("Backup Created Successfully");</script>');
+            echo ('<script>alert("Backup Created Successfully");</script>');
         } else {
             die("Error!");
         }
@@ -100,7 +100,7 @@ if (isset($_POST['restore'])) {
 
 ?>
 
-<?php include('header.php');?>
+<?php include('header.php'); ?>
 
 <div class="page-title">
     <div class="title_left">
