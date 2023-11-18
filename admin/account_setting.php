@@ -124,9 +124,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 
 <body class="nav-md">
-
-    <?php require('../database/dbcon.php'); ?>
-    <?php require('session.php'); ?>
     <div class="container body">
         <div class="main_container">
             <?php include('sidebar_menu.php'); ?>
