@@ -174,7 +174,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                                     <label class="m-0" for="image">Profile Image</label>
                                                     <input id="profile_image" type="file" name="image"
                                                         class="form-control">
-                                                    <!-- FROM this profile_image, accept the PNG, JPEG, GIF, JPG format -->
                                                 </div>
                                                 <button class="mt-4 btn btn-sm btn-block btn-outline-primary"
                                                     style="margin: 2rem 0 0 0;">Confirm
